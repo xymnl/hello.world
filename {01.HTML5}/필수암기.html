@@ -1,0 +1,59 @@
+<!doctype html>	<!-- 선언문, 문서타입:html --> <!--독타입(문서형 정의), DTD문 (Document Type Definition)-->
+<html lang="ko"> <!--시작태그--><!-- 태그 : 요소명+꺽쇠 --> <!-- lang : 속성, "KO" : 속성값, lang 속성에 Ko 속성값을 지정, 한국어(ko), 영어(en)-->
+<head> <!-- 1. 웹 페이지의 제목을 정의  2. 문자 인코딩을 정의  3. 문서의 정보를 제공(meta태그 역할)  4. 스타일, 자바스크립트 문서를 포함  -->
+  <meta charset="UTF-8">  <!-- 웹 페이지 문자 인코딩 지정 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 문서의 정보 제공-->
+  <!-- 1. 반응형 웹 제작(다양한 기기들의 화면 크기에 맞춰준다.) 
+         2. width=device-width : 기기들의 너비를 브라우저의 너비에 맞춘다. (디바이스(width)값을 웹 브라우저 값에 맞춰라)
+         3. initial-scale = 1.0 : 초기화면의 줌(Zoom)을 1:1로 지정  -->
+  <title>제목 표시줄</title> <!-- 생략 불가, 웹브라우저 제목 표시줄에 노출됨 --> <!-- 웹 페이지의 제목을 정의 -->
+  <link rel="shortcut icon" href="images/favicon.ico"> <!-- 파비콘을 지정 (제목표시줄 앞 아이콘)-->
+  <link rel="stylesheet" href="css/style.css"> <!-- 외부 CSS 파일을 HTML 문서에 포함 -->
+  <style>
+    /* 내부 스타일시트 적용 */
+  </style>
+    <script src="js/script.js"></script> <!-- 외부 JavaScript 파일을 HTML 문서에 포함 -->
+  <script>
+    // 자바스크립트 적용
+  </script>
+</head>
+<body>
+  <p>요소(Element) : 시작태그 + 웹컨텐츠 + 끝태그 세가지로 이루어져 있다.</p>
+	<p>태그(Tag) : 꺽쇠 + 요소명 + 꺽쇠 세가지로 이루어져 있다.</p>
+	<p>태그의 용도 : 웹컨텐츠를 저장한다.</p>
+	<p>계층구조 : 부모태그 + 자식태그(Tab, 들여쓰기) 형태로 이루어져 있다.</p>
+  <p>
+    계층 구조의 예
+		<section> -> 부모 태그
+			<article> -> 자식태그
+				<h3> ~ </h3>
+				<img src = "#">
+			</article>
+		</section>
+  </p>
+		
+  <h1>※웹 접근성 (Web Accessibility)</h1>
+  <p>▶웹 사이트에서 제공하는 정보를 차별 및 제한 없이 동등하게 이용할 수 있도록 보장하는 것이다.</p>
+  <p> 1. 장애인 및 고령자 등을 포함한 모든 사람 </p><p>2. 다양한 플랫폼 및 장치, 웹 브라우저의 모든 환경</p>
+  <h1> ※웹 콘텐츠 접근성 지침</h1>
+  <p>▶웹의 표준화 관련 국제 기구인 월드 와이드 웹 컨소시엄(W3C, www)에서 웹 접근성을 위한 지침을 결정한다. </p>
+  <h1>※웹 표준 (Web Standard)</h1>
+  <P>▶웹 접근성 수준 향상의 최적의 방법론으로 관심을 모으고 있는 웹 표준이란 "웹에서 표준적으로 사용되는 기술이나 규칙"을 의미하는데, 웹에서의 표준은 w3c에서 나온 권고안을 말한다.</P>
+  <h1>※웹 표준 관련 기술</h1>
+  <p>1. HTML5 (HyperText Markup Language) : 구조를 담당</p> <p> - 시맨틱 태그(header, nav, section, article, aside, footer 등)</p> <p> - video, audio, input(입력 양식 태그) 등</p>
+  <p>2. CSS3 (Cascading Style Sheet) : 표현, 레이아웃 담당 </p> <p> - 페이지 레이아웃(배치), 공백(여백), 공간(여백), 폰트, 색상, 문서 표현, 컨텐츠의 전환과 변환 등을 지정할 수 있다.</p>
+  <p>3. JavaScript and JQuery : 동작, 기능 </p> <p> - 요소를 객체화(DOM, Document Object Model)해서 동작을 제어하는 데 사용하는 웹 표준 기술이다.</p>
+  <h1>※시맨틱 태그 :웹 접근성을 향상 시키기 위해 사용하는 태그</h1>
+  <h1>※하이퍼링크 태그</h1> <p>- a 태그는 다른 웹페이지나 웹페이지 내부의 특정 위치로 이동할 때 사용한다.</p><p>- 태그의 기능으로 조작된 문서('정보 구조')를 구성할 수 있다.</p>
+  <p>- href 속성값으로 [ 상대 경로, #(더미 링크), 절대 경로, URL 경로, 아이디 경로(=내부링크), 메일 경로, 전화 경로(모바일) ] 등을 사용 할 수 있다.</p> 
+  <p>- a 태그는 inline 형식(좌 > 우)으로 배치된다.  </p>
+  <p>※ 태그 유형 2가지 
+         1. 인라인 (inline)
+           - 인라인 형식으로 배치되는 태그 : img 태그, span 태그, a 태그, input 태그 (레이아웃 값 적용 잘 되지 않아 블록형 박스로 감싸야함) 
+         2. 블록 (block)
+           - 블록 형식 (위>아래)으로 배치되는 태그 : 대부분(레이아웃 값 적용 잘 됨)
+  </p>
+
+</body>
+</html>

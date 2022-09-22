@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공간분할태그</title>
+  <style>
+    div {float:left; width:40%; height: 200px; background : rgb(0, 0, 0); border: 5px solid rgb(243, 70, 162);}
+    span {color:rgb(244, 68, 156); background : #000;}
+    h3{color:#FFF;}
+  </style>
+</head>
+<body>
+  <!-- 
+    ★★ 공간 분할 태그는 div(블록형)와 span(인라인형) 태그가 있다. ★★
+         요소의 유형
+         1. 블록형 (block) : 요소의 너비값이 100%이며, 요소의 높이는 0(기본값)이다. 레이아웃 관련 스타일시트가 잘 적용된다.
+                                      요소는 위에서 아래로 배치된다.
+         2. 인라인형 (inline) : 요소의 너비값이 0이고, 높이값도 0이다. 웹 컨틴츠를 포함하면 요소의 너비값은 웹 컨텐츠의 너비값이며, 레아이웃 관련 스타일시트가 잘 적용되지 않는다.
+                                          요소는 좌에서 우로 배치된다. (ex. a 요소, sapn 요소, input 요소)
+         3. 인라인-블록형 (lnline-block) : 요소의 너비값이 웹 컨텐츠의 너비값이며, 레이아웃 관련 스타일시트가 잘 적용된다.
+                                                             요소는 좌에서 우로 배치된다. (ex. img 요소)
+                                                             잘 안쓰는 이유 : 03. 웹~ 파일 확인
+                                                             (요소와 요소 사이에 좁혀지지 않는 여백 생김)
+
+     공간 분할 : 공간을 반으로 나누고 싶을때 사용
+----------------------------
+     공간 분할 태그를 사용하여 웹 페이지를 나눈다.
+     CSS로 원하는 레이아웃을 구성할 수 있기 때문이다. 
+
+    블록형 (block) : 요소의 너비값이 100%이며, 요소의 높이는 0(기본값)이다. 
+    인라인형 (inline) : 요소의 너비값이 0이고, 높이값도 0이다. 웹 컨텐츠를 포함하면 요소의 너비값은 웹 컨텐츠의 너비값이며,  레아이웃 관련 스타일시트가 잘 적용되지 않는다.
+  -->
+  <span>웹 컨텐츠</span> <!-- 레아이웃 관련 시에는 잘 쓰지 않음 -->
+  <h1>"나는 <span>천재</span>다"</h1> <!-- 텍스트 내에 색상, 배경색, ... 에 효과를 줄 때 사용함 -->
+
+  <div><h3>조아용</h3><img src="images/joayong_ddabong.jpg" alt="joayong_ddabong"></div>
+  <div><img src="images/joayong_back.png" alt="joayong_back"></div>
+  <div></div>
+  <div></div>
+
+</body>
+</html>

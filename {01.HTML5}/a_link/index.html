@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인 페이지</title>
+  <style>
+    body {background:rgba(164, 233, 164, 0.911);}
+    #innerLink {height : 200px; margin-top: 2000px; background : #FFF; }
+    #inLink {height : 200px; margin-top: 2000px; background : #757070; }
+    ul {display:flex; justify-content: space-around; align-items: center;}
+    ul li {list-style: none;}
+    ul li a {color:#FFF; text-decoration: none;}
+    ul li a :hover {color:#F00;}
+    ul2 {display:flex; justify-content: space-around; align-items: center;}
+    ul2 li  {list-style: none;}
+    ul2 li p {color:#FFF; text-decoration: none;}
+    ul2 li p :hover {color:#F00;}
+  </style>
+</head>
+<body>
+  <h2 id="main">메인 페이지</h2>
+  <!-- a 태그는 inline 형식(좌 > 우)으로 배치된다. -->
+  <!-- 인라인(inline) 형식(좌 > 우)으로 배치  : img 태그, span 태그, a 태그, input 태그 -->
+  <!-- 블록(Block) 형식 (위>아래)으로 배치 : 대부분 태그-->
+    <ul> <!-- ul : 목록 태그 -->
+      <li><a href="index.html">메인 페이지</a></li> <!-- li : 항목 태그-->
+      <li><a href="sub01.html">서브 페이지01</a></li> <!-- li : 항목 태그-->
+      <li><a href="sub02.html">서브 페이지02</a></li> <!-- li : 항목 태그-->
+      </ul>
+      <ul>
+      <li><a href="http://www.daum.net">다음</li>
+      <li><a href="http://google.com">구글</a></li>
+      <li><a href="tel:010-0000-1111">010-0000-1111</a> <!-- 전화 경로 (모바일에서 씀) --></li>
+      <li><a href="mailto:xymnl@naver.com">xymnl@naver.com</a> <!-- 메일 경로 (잘 안씀)--></li>
+    </ul>
+
+<ul>
+  <li><a href="#innerLink">내부 링크</a></li>
+  <li><a href="#inLink"> 내부 링크 2</a></li>
+</ul>
+
+<p id="innerLink">내부링크가 적용된 문서 태그</p>
+<ul><li><a href="#main">Top</a></li></ul>
+<p id="inLink">내부 링크 적용 태그 2</p>
+<ul> <li><a href ="#main">Top</a></li></ul>
+
+<ul2>
+  <li><p>ul 2텍스트</p></li>
+</ul2>
+
+</body>
+</html>

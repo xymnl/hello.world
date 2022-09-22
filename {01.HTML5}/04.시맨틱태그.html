@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시맨틱 태그</title>
+</head>
+<body>
+  <!-- 
+    시맨틱 태그를 사용하여 개발한 웹사이트를 시맨틱 웹이라고 하며 브라우저가 코드를 읽고 의미를 인식할 수 있는 지능형 웹을 말한다.
+    시맨틱은 "의미론적인" 이라는 의미의 영어 단어이다. ("태그에 '의미를 부여한 태그'가 시맨틱 태그다.")
+    웹 사이트의 "구조에 사용되는 태그"를 표준화함으로써 웹 개발자가 임의로 구성했던 웹 사이트의 구조가 더욱 명확해졌다.
+    ★인터프리터(해석기)에게 바디 부분에 대한 태그의 종류, 목적, 콘텐츠의 내용을 미리 제공하면 식별이 빨라진다. (웹 접근성이 좋다.)
+    < 인터프리터 단점 : 매번 새롭게 식별함(느림) / 컴파일러 : 첫번째 컴파일 시 저장해 두번째부터는 빠르게 로딩이 가능함 >
+    인터프리터, 검색엔진, 스크린 리더와  같은 장비등에 도움을 준다.
+    휴대용 단말기의 급격한 발전과 접근 방식의 다양화로 인해 문서의 각 부분에 대한 식별은 매우 중요하다. 
+
+    header   : <header></header> 머릿말, 로고, 검색, 탑메뉴 (로그인/회원가입/언어선택 등)
+    nav         : 네비게이션 바 (냅바(NavBar), GNB, 메인 메뉴)
+    section   : 본문의 내용을 묶어놓은 영역 (여러개가 작성 될 수 있음) (행으로만 분류)
+    article    : section 내부에서 독립적으로 구성된 내용을 별도로 묶어놓은 영역
+    aside      : 본문 내용과 연광성이 없는 연관성이 없는 분리된 내용을 묶어 놓은 영역 (광고 배너, 서브 메뉴 등)
+    footer    : 꼬리말, 회사정보, 저작권, SNS 버튼 등으로 구성된 영역
+  -->
+
+<header>
+  <h1>LOGO</h1>
+  <ul>
+    <li><a href="#">로그인</a></li>
+    <li><a href="#">회원가입</a></li>
+  </ul>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="https://naver.com">menu01</a></li>
+    <li><a href="#">menu02</a></li>
+    <li><a href="#">menu03</a></li>
+  </ul>
+</nav>
+
+<section> <!-- 1행 -->
+
+</section>
+<section> <!-- 2행 -->
+  <article><h3>Sub Title01</h3><img src="https://via.placeholder.com/300X200/f00/FFFFFF" alt="더미 이미지"><p>Text01</p></article> <!-- 1열 -->
+  <article><h3>Sub Title02</h3><img src="https://via.placeholder.com/300X100" alt="더미 이미지"><p>text02</p></article> <!-- 2열 -->
+  <aside><p>aside text</p><p>aside text</p></aside> <!-- 3열 -->
+</section>
+
+<footer>
+  <h5>LOGO</h5>
+  <p>copyright &copy; 2022 </p>
+</footer>
+
+</body>
+</html>

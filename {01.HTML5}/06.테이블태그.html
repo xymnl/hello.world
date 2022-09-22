@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>☆ 테이블 태그 ★</title>
+  <style>
+    table {width : 100%; border : 1px solid #0F0}
+    td { border : 1px solid #36F}
+    th {border : 1px solid #36F}
+  </style>
+</head>
+<body>
+  <!--
+    테이블 태그는 행과 열에 의해 만들어진 격자가 연속적으로 이어지는 구조이다.
+
+    table 태그로  전체를 감싼다.
+    행은 tr 태그로 감싼다.
+    열은 콘텐츠를 저장하며, td 태그로 감싼다.
+    tr과 td 태그에는 속성을 지정할 수 있다.
+
+    td 태그가 컨텐츠를 저장하기 때문에 스타일 시트가 잘 적용됨
+    tr 태그는 스타일 시트가 잘 적용되지 않음
+
+    table 2가지 종류
+    table - tr - td
+    table - thead (tr - th) - tbody (tr - td) 
+----------------------------
+
+    table : 테이블 영역을 표시한다.
+    thead : 테이블의 머리 (table head)
+    tbody : 테이블의 본문 (table body)
+    tr : 테이블의 행 (table row)
+    th : 테이블의 제목 (table header)
+    td : 테이블의 일반 요소 (table data)
+
+
+  -->
+
+  <table>
+    <tr> <!-- 행 -->
+      <td>1행 1열</td> <!-- 열 -->
+      <td>1행 2열</td>
+      <td>1행 3열</td>
+    </tr>
+    <tr>
+      <td>2행 1열</td>
+      <td>2행 2열</td>
+      <td>2행 3열</td>
+    </tr>
+    <tr>
+      <td>3행 1열</td>
+      <td>3행 2열</td>
+      <td>3행 3열</td>
+      <td>3행 4열</td>
+    </tr>
+    <tr>
+      <td>4행 1열</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>5행 5열</td>
+    </tr>
+    <tr>
+      <td>6행 1열</td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8행 1열</td>
+    </tr>
+  </table>
+  <!-- ※※ 행합침 속성 사용해보기 ※※ -->
+  <table>
+    <thead>
+        <tr> <!-- 행 -->
+          <th>1행 1열</th> <!-- 열 --> <!-- 중앙 정렬, 볼드체-->
+          <th>1행 2열</th>
+          <th>1행 3열</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr> <!-- 행 -->
+          <td> 2행 1열</td> <!-- 열 -->
+          <td> 2행 2열</td> 
+          <td> 2행 3열</td> 
+        </tr>
+    </tbody>
+  </table>
+
+  <!-- 3행 5열을 가진 테이블 작성-->
+  <table>
+    <tr>
+      <td colspan=5>1행 1열</td>
+      <!-- <td>1행 2열</td>
+      <td>1행 3열</td>
+      <td>1행 4열</td>
+      <td>1행 5열</td> -->
+    </tr>
+    <tr>
+      <td>2행 1열</td>
+      <td>2행 2열</td>
+      <td>2행 3열</td>
+      <td>2행 4열</td>
+      <td>2행 5열</td>
+    </tr>
+    <tr>
+      <td>3행 1열</td>
+      <td>3행 2열</td>
+      <td>3행 3열</td>
+      <td>3행 4열</td>
+      <td>3행 5열</td>
+    </tr>
+  </table>
+
+  <h1>table - thead - tbody</h1>
+  <table>
+    <thead>
+      <tr>
+        <th colspan=5>1행 1열</th>
+      </tr>
+      <tr>
+        <th>2행 1열</th>
+        <th>2행 2열</th>
+        <th>2행 3열</th>
+        <th>2행 4열</th>
+        <th>2행 5열</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+
+</body>
+</html>

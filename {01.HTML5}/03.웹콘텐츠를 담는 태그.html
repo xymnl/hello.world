@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹컨텐츠를 담는 태그</title>
+</head>
+<body>
+  <!--
+    텍스트  : h1 ~ h6 (타이틀,중요도에 따라 가장 중요한 타이틀을 h1에 저장함) , p (문단)
+    이미지 : img 태그의 필수 속성은 src 속성을 이용해 이미지를 html 문서에 포함(**경로 : 상대경로, 절대경로) 시킨다. 
+                    상대 경로 : 내가 작성하는 파일의 위치에서 경로가 시작하는 것
+                    절대 경로 : 루트 디렉터리에서 경로가 시작하는 것
+                 alt 속성으로 이미지에 대한 설명을 작성하며, 웹 접근성을 향상시키기 위해 웹 표준에서는 사용할 것을 권장한다. (필수속성X)
+    비디오 : video
+    오디오 : audio
+    (html 의 역할 : 웹 컨텐츠 저장)
+  -->
+  <h3>웹 컨텐츠를 저장하는 태그</h3>
+  <p>텍스트를 저장할 때 사용하는 태그는 h1 ~ h6, p 태그이다.</p>
+  <img src="./joayong.png" alt="조아용">      // 상대 경로  <!-- X, ./, ../  : 상대경로 -->
+  <img src="images/joayong_hate.jpg" alt="하기시러용">      // 상대 경로 <!--  (슬래시 /  : 해당 파일 하단으로 이동하는 뜻) -->
+  <img src="../../imgs/joayong_back.png" alt="조아용뒷태">      // 상대 경로 <!-- ../ : 현재 파일 위로 이동하는 뜻 (이동하는 횟수대로 반복)-->
+  <img src="D:/오선영/{01.HTML5}/joayong.png" alt="조아용">   // 절대 경로
+  <img src="/오선영/{01.HTML5}/joayong.png" alt="조아용">   // 절대 경로  <!-- / 시작 : 웹서버의 절대경로 -->
+
+  <p>동영상을 저장할 때 사용하는 태그는 video 태그이다. </p>
+  <video autoplay preload controls loop muted> <!-- 자동재생 자동불러오기 동영상진행바표시 무한반복 음소거--> <!-- preload 없으면 사용자가 재생 버튼 눌렀을때 불러오기 시작함-->
+    <source src="video/ive.mp4" > <!--  H.264 : 인코딩 방법 -->
+  </video>
+
+<p>오디오를 저장할 때 사용하는 태그는 audio 태그이다.</p>
+<audio autoplay preload controls loop muted>
+  <source src="audio/Over_the_Horizon.mp3">
+</audio>
+
+</body>
+</html>
